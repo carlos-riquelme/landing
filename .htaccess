@@ -5,7 +5,7 @@
 </IfModule>
 # php -- END cPanel-generated handler, do not edit
 
-Header set Content-Security-Policy "script-src 'self'"
+Header always set Content-Security-Policy "default-src 'self'; frame-ancestors 'none'; font-src 'self'  https://fonts.googleapis.com https://fonts.gstatic.com; img-src 'self'; object-src 'self'; script-src 'self'; style-src 'self'"
 Header always set X-Frame-Options "SAMEORIGIN"
 Header always set X-Xss-Protection "1; mode=block"
 Header always set X-Content-Type-Options "nosniff"
